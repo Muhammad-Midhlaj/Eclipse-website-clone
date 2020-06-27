@@ -1,0 +1,798 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta content="Eclipse Roleplay is the most advanced Grand Theft Auto V roleplay server with Voice Chat." name="description">
+<meta content="Eclipse, Roleplay, RP, Grand, Theft, Auto, Five, 5, Roleplay, Roleplaying, Multiplayer, Server, GTMP, FiveM, V, Server, Best" name="keywords">
+<meta content="GTA V Roleplay" name="author">
+<!--[if IE]><meta content="IE=edge,chrome=1"http-equiv=X-UA-Compatible><![endif]-->
+<meta content="width=device-width,initial-scale=1,maximum-scale=1" name="viewport">
+<title>Eclipse RP - GTA V Roleplay Server</title>
+<link href="images\favicon.ico" rel="icon">
+<style>
+    @charset "UTF-8";
+    html{
+      font-family:sans-serif;
+      -webkit-text-size-adjust:100%;
+      -ms-text-size-adjust:100%}
+    body{
+      margin:0}
+    header,nav,section{
+      display:block}
+    a{
+      background-color:transparent}
+    b{
+      font-weight:700}
+    h1{
+      margin:.67em 0;
+      font-size:2em}
+    img{
+      border:0}
+    button{
+      margin:0;
+      font:inherit;
+      color:inherit}
+    button{
+      overflow:visible}
+    button{
+      text-transform:none}
+    button{
+      -webkit-appearance:button}
+    button::-moz-focus-inner{
+      padding:0;
+      border:0}
+    *{
+      -webkit-box-sizing:border-box;
+      -moz-box-sizing:border-box;
+      box-sizing:border-box}
+    :after,:before{
+      -webkit-box-sizing:border-box;
+      -moz-box-sizing:border-box;
+      box-sizing:border-box}
+    html{
+      font-size:10px}
+    body{
+      font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-size:14px;
+      line-height:1.42857143;
+      color:#333;
+      background-color:#fff}
+    button{
+      font-family:inherit;
+      font-size:inherit;
+      line-height:inherit}
+    a{
+      color:#337ab7;
+      text-decoration:none}
+    img{
+      vertical-align:middle}
+    .img-responsive{
+      display:block;
+      max-width:100%;
+      height:auto}
+    h1,h2{
+      font-family:inherit;
+      font-weight:500;
+      line-height:1.1;
+      color:inherit}
+    h1,h2{
+      margin-top:20px;
+      margin-bottom:10px}
+    h1{
+      font-size:36px}
+    h2{
+      font-size:30px}
+    p{
+      margin:0 0 10px}
+    .text-center{
+      text-align:center}
+    ul{
+      margin-top:0;
+      margin-bottom:10px}
+    .container{
+      padding-right:15px;
+      padding-left:15px;
+      margin-right:auto;
+      margin-left:auto}
+    @media (min-width:768px){
+      .container{
+        width:750px}
+    }
+    @media (min-width:992px){
+      .container{
+        width:970px}
+    }
+    @media (min-width:1200px){
+      .container{
+        width:1170px}
+    }
+    .row{
+      margin-right:-15px;
+      margin-left:-15px}
+    .col-md-5,.col-md-6,.col-sm-5,.col-sm-7{
+      position:relative;
+      min-height:1px;
+      padding-right:15px;
+      padding-left:15px}
+    @media (min-width:768px){
+      .col-sm-5,.col-sm-7{
+        float:left}
+      .col-sm-7{
+        width:58.33333333%}
+      .col-sm-5{
+        width:41.66666667%}
+    }
+    @media (min-width:992px){
+      .col-md-5,.col-md-6{
+        float:left}
+      .col-md-6{
+        width:50%}
+      .col-md-5{
+        width:41.66666667%}
+      .col-md-offset-5{
+        margin-left:41.66666667%}
+      .col-md-offset-1{
+        margin-left:8.33333333%}
+    }
+    .collapse{
+      display:none}
+    .nav{
+      padding-left:0;
+      margin-bottom:0;
+      list-style:none}
+    .nav>li{
+      position:relative;
+      display:block}
+    .nav>li>a{
+      position:relative;
+      display:block;
+      padding:10px 15px}
+    .navbar{
+      position:relative;
+      min-height:50px;
+      margin-bottom:20px;
+      border:1px solid transparent}
+    @media (min-width:768px){
+      .navbar{
+        border-radius:4px}
+    }
+    @media (min-width:768px){
+      .navbar-header{
+        float:left}
+    }
+    .navbar-collapse{
+      padding-right:15px;
+      padding-left:15px;
+      overflow-x:visible;
+      -webkit-overflow-scrolling:touch;
+      border-top:1px solid transparent;
+      -webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,.1);
+      box-shadow:inset 0 1px 0 rgba(255,255,255,.1)}
+    @media (min-width:768px){
+      .navbar-collapse{
+        width:auto;
+        border-top:0;
+        -webkit-box-shadow:none;
+        box-shadow:none}
+      .navbar-collapse.collapse{
+        display:block!important;
+        height:auto!important;
+        padding-bottom:0;
+        overflow:visible!important}
+      .navbar-fixed-top .navbar-collapse{
+        padding-right:0;
+        padding-left:0}
+    }
+    .navbar-fixed-top .navbar-collapse{
+      max-height:340px}
+    @media (max-device-width:480px) and (orientation:landscape){
+      .navbar-fixed-top .navbar-collapse{
+        max-height:200px}
+    }
+    .container>.navbar-collapse,.container>.navbar-header{
+      margin-right:-15px;
+      margin-left:-15px}
+    @media (min-width:768px){
+      .container>.navbar-collapse,.container>.navbar-header{
+        margin-right:0;
+        margin-left:0}
+    }
+    .navbar-fixed-top{
+      position:fixed;
+      right:0;
+      left:0;
+      z-index:1030}
+    @media (min-width:768px){
+      .navbar-fixed-top{
+        border-radius:0}
+    }
+    .navbar-fixed-top{
+      top:0;
+      border-width:0 0 1px}
+    .navbar-brand{
+      float:left;
+      height:50px;
+      padding:15px 15px;
+      font-size:18px;
+      line-height:20px}
+    .navbar-brand>img{
+      display:block}
+    @media (min-width:768px){
+      .navbar>.container .navbar-brand{
+        margin-left:-15px}
+    }
+    .navbar-toggle{
+      position:relative;
+      float:right;
+      padding:9px 10px;
+      margin-top:8px;
+      margin-right:15px;
+      margin-bottom:8px;
+      background-color:transparent;
+      background-image:none;
+      border:1px solid transparent;
+      border-radius:4px}
+    @media (min-width:768px){
+      .navbar-toggle{
+        display:none}
+    }
+    .navbar-nav{
+      margin:7.5px -15px}
+    .navbar-nav>li>a{
+      padding-top:10px;
+      padding-bottom:10px;
+      line-height:20px}
+    @media (min-width:768px){
+      .navbar-nav{
+        float:left;
+        margin:0}
+      .navbar-nav>li{
+        float:left}
+      .navbar-nav>li>a{
+        padding-top:15px;
+        padding-bottom:15px}
+    }
+    @media (min-width:768px){
+      .navbar-right{
+        float:right!important;
+        margin-right:-15px}
+    }
+    .container:after,.container:before,.nav:after,.nav:before,.navbar-collapse:after,.navbar-collapse:before,.navbar-header:after,.navbar-header:before,.navbar:after,.navbar:before,.row:after,.row:before{
+      display:table;
+      content:" "}
+    .container:after,.nav:after,.navbar-collapse:after,.navbar-header:after,.navbar:after,.row:after{
+      clear:both}
+    @-ms-viewport{
+      width:device-width}
+    @-webkit-keyframes fadeInUp{
+      0%{
+        opacity:0;
+        -webkit-transform:translate3d(0,100%,0);
+        transform:translate3d(0,100%,0)}
+      to{
+        opacity:1;
+        -webkit-transform:none;
+        transform:none}
+    }
+    @keyframes fadeInUp{
+      0%{
+        opacity:0;
+        -webkit-transform:translate3d(0,100%,0);
+        transform:translate3d(0,100%,0)}
+      to{
+        opacity:1;
+        -webkit-transform:none;
+        transform:none}
+    }
+    .fadeInUp{
+      -webkit-animation-name:fadeInUp;
+      animation-name:fadeInUp}
+    body{
+      color:#29282b}
+    a{
+      text-decoration:none}
+    .sticky-navigation{
+      -webkit-backface-visibility:hidden}
+    body,h1,h2{
+      font-family:Roboto,sans-serif}
+    .preloader{
+      position:fixed;
+      top:0;
+      left:0;
+      right:0;
+      bottom:0;
+      background-color:#fefefe;
+      z-index:9999;
+      height:100%;
+      width:100%;
+      overflow:hidden!important}
+    .nav-logo,.section{
+      overflow:hidden}
+    .status{
+      position:absolute;
+      left:50%;
+      top:50%;
+      transform:translate(-50%,-50%);
+      height:200px;
+      width:200px}
+    .relative,.section{
+      position:relative}
+    body,html{
+      height:100%;
+      width:100%;
+      max-width:100%}
+    body{
+      font-size:14px;
+      font-weight:300;
+      letter-spacing:1px;
+      line-height:1.8;
+      overflow-x:hidden;
+      margin:auto;
+      background:#fff;
+      -webkit-font-smoothing:subpixel-antialiased}
+    ::-webkit-selection{
+      color:#fff;
+      background:#29282b}
+    a{
+      color:#999}
+    .downloads a+a{
+      margin-left:30px}
+    h1,h2{
+      font-weight:600;
+      margin-bottom:20px;
+      line-height:1.4;
+      color:#29282b;
+      letter-spacing:2px;
+      margin-top:0}
+    h1{
+      font-size:40px}
+    h2{
+      font-size:30px}
+    .img-responsive{
+      margin:0 auto;
+      width:auto}
+    .section{
+      padding:100px 0;
+      z-index:2}
+    .navbar-nav li a{
+      position:relative;
+      letter-spacing:1px}
+    .space40{
+      margin-bottom:40px}
+    .sticky-navigation{
+      background:0 0;
+      border:none;
+      padding:10px 0!important;
+      margin-bottom:0!important;
+      top:0}
+    .NavBg{
+      background:rgba(255,255,255,.9)}
+    .nav-logo{
+      padding:0 15px;
+      height:50px}
+    .nav-logo img{
+      height:100%}
+    .navbar{
+      margin-bottom:0}
+    .navbar-nav{
+      float:left;
+      margin:0!important}
+    .navbar-nav li a{
+      padding:10px 0;
+      line-height:30px;
+      font-size:11px;
+      color:#666;
+      background:0 0!important;
+      text-transform:uppercase;
+      font-weight:600;
+      margin-left:25px}
+    .navbar-nav li a:after{
+      bottom:10px;
+      content:'';
+      position:absolute;
+      left:0;
+      height:2px;
+      width:100%;
+      transform:scaleX(0)}
+    .navbar-nav li.active a:after{
+      transform:scaleX(1)}
+    .navbar-toggle{
+      padding:5px 10px;
+      margin-right:10px}
+    .another-section{
+      background:#f9f9f9;
+      border-top:1px solid #eee;
+      text-align:center}
+    .right-mob-front{
+      position:absolute;
+      right:12%;
+      margin:0 auto;
+      top:-40px;
+      z-index:2}
+    @media only screen and (max-width:992px){
+      #intro{
+        text-align:center}
+      #intro,.section{
+        padding:100px 0}
+      .phones{
+        position:relative;
+        width:100%;
+        max-width:600px;
+        height:400px;
+        overflow:hidden;
+        margin:0 auto 50px}
+      .right-mob-front{
+        left:0;
+        right:auto;
+        max-width:100%;
+        top:0}
+      .container>.navbar-collapse,.container>.navbar-header{
+        width:100%;
+        text-align:center}
+    }
+    @media only screen and (max-width:767px){
+      .navbar-collapse{
+        max-height:355px!important;
+        padding-bottom:15px;
+        padding-right:15px;
+        padding-left:15px;
+        overflow-x:visible;
+        border-top:1px solid transparent}
+      .navbar-nav{
+        width:100%}
+      .navbar-nav li a{
+        display:inline-block}
+      h1{
+        font-size:30px}
+    }
+    @media only screen and (max-width:480px){
+      .downloads a{
+        margin:5px}
+      .right-mob-front{
+        max-width:80%}
+      .downloads a:first-child{
+        margin-bottom:20px;
+        display:inline-block}
+    }
+    .mt-50{
+      margin-top:50px}
+    .mt-80{
+      margin-top:80px}
+    .mb-40{
+      margin-bottom:40px}
+    .navbar-nav li a:after{
+      background-color:#1565c0}
+    .navbar-nav li.active a{
+      color:#1565c0}
+    @font-face{
+      font-family:Roboto;
+      font-style:normal;
+      font-weight:100;
+      src:local('Roboto Thin'),local('Roboto-Thin'),url(https://fonts.gstatic.com/s/roboto/v16/Jzo62I39jc0gQRrbndN6nfesZW2xOQ-xsNqO47m55DA.ttf) format('truetype')}
+    @font-face{
+      font-family:Roboto;
+      font-style:normal;
+      font-weight:300;
+      src:local('Roboto Light'),local('Roboto-Light'),url(https://fonts.gstatic.com/s/roboto/v16/Hgo13k-tfSpn0qi1SFdUfaCWcynf_cDxXwCLxiixG1c.ttf) format('truetype')}
+    @font-face{
+      font-family:Roboto;
+      font-style:normal;
+      font-weight:400;
+      src:local('Roboto'),local('Roboto-Regular'),url(https://fonts.gstatic.com/s/roboto/v16/zN7GBFwfMP4uA6AR0HCoLQ.ttf) format('truetype')}
+    @font-face{
+      font-family:FontAwesome;
+      src:url(fonts/fontawesome-webfont.eot);
+      src:url(fonts/fontawesome-webfont-1.eot) format('embedded-opentype'),url(fonts/fontawesome-webfont.woff2?v=4.7.0) format('woff2'),url(fonts/fontawesome-webfont.woff) format('woff'),url(fonts/fontawesome-webfont.ttf) format('truetype'),url(fonts/fontawesome-webfont.svg) format('svg');
+      font-weight:400;
+      font-style:normal}
+    .fa{
+      display:inline-block;
+      font:normal normal normal 14px/1 FontAwesome;
+      font-size:inherit;
+      text-rendering:auto;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale}
+    .fa-bars:before{
+      content:"\f0c9"}
+
+    .serverBox{
+        float: left;
+        /**/
+        border-radius: 25px;
+        padding: 10px; 
+    }
+    .online{
+        color: rgb(0, 150, 45);
+        float: right;
+        margin-left: 10px;
+    }
+    .offline{
+        color: rgb(192, 3, 3);
+        float: right;
+        margin-left: 10px;
+    }
+    .join{
+        float: right;
+        background-color: #1565c0;
+        border-radius: 10px;
+        padding: 0px 10px;
+        margin-left: 10px;
+        color: whitesmoke;
+    }
+  </style>
+<!--[if lt IE 9]><script src=js/html5shiv.js></script><script src=js/respond.min.js></script><![endif]-->
+<script src="https://www.googletagmanager.com/gtag/js?id=UA-61295219-3" async=""></script>
+<script>function gtag(){
+      dataLayer.push(arguments)}
+    window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","UA-61295219-3")</script>
+<style>ol{
+    margin:0 0 1.5em;
+    padding:0;
+    counter-reset:item}
+    li.nostyle{
+      list-style-type:none}
+    ol.special>li{
+      margin:0;
+      padding:0 0 0 2rem;
+      text-indent:-1.2rem;
+      list-style-type:none;
+      counter-increment:item}
+    ol.special>li:before{
+      display:inline-block;
+      width:1.5rem;
+      padding-right:.5rem;
+      font-weight:700;
+      text-align:right;
+      content:counter(item) '.'}
+  </style>
+<body data-offset="70" data-spy="scroll" data-target=".navbar-custom" id="page-top">
+<div class="preloader">
+<div class="status">
+<img style="width: 100%;" alt="loading..." src="images\logo.png">
+</div>
+</div>
+<header>
+<nav class="NavBg navbar navbar-custom navbar-fixed-top navbar-top sticky-navigation">
+<div class="container">
+<div class="navbar-header">
+<button class="navbar-toggle" data-target=".navbar-main-collapse" data-toggle="collapse" type="button">
+<i class="fa fa-bars">
+</i>
+</button>
+<a href="#page-top" class="page-scroll nav-logo navbar-brand">
+<img alt="grand theft auto 5 server eclipse roleplay logo" src="images\logo.png">
+</a>
+<div id="serverBox" class="serverBox">
+<b>Server Status </b>
+Players: <label id="cantPlayers">0</label>/<label id="maxPlayers">250</label>
+<div id="servStatus" class="online">Online</div>
+</div>
+</div>
+<div class="collapse navbar-collapse navbar-main-collapse navbar-right">
+<ul class="nav navbar-nav">
+<li class="active">
+<a href="#page-top" class="page-scroll">Home</a>
+<li>
+<a href="https://forum.eclipse-rp.net" class="page-scroll">Forums</a>
+<li>
+<a href="https://panel.eclipse-rp.net" class="page-scroll">Panel</a>
+<li>
+<a href="https://discord.gg/y2gxAjg" class="page-scroll">Discord</a>
+<li>
+<a href="#how-to-play" class="page-scroll">Download & Play</a>
+</li></ul>
+</div>
+</div>
+</nav>
+</header>
+<section class="section mt-50" id="intro">
+<div class="container" style="margin-bottom:-100px">
+<div class="row">
+<div class="col-md-6 col-sm-5 item">
+<div class="fadeInUp wow text-center welcome_area_thumb">
+<img alt="grand theft auto 5 roleplay character franklin" src="images\right-mob-back.png" class="img-responsive">
+</div>
+</div>
+<div class="item col-md-5 col-md-offset-1 col-sm-7 welcome_text">
+<div class="mt-80 welcome_text_area">
+<h1>GTA V Roleplay Server.
+</h1>
+<p class="mb-40">Join a massive english
+<b>Grand Theft Auto V
+</b> roleplaying community. Our voice chat based server will provide you the best playing experience! With over
+<b>200 players
+</b> you will never feel alone in the sunny city of Los Santos! Join a gang or law enforcement faction, work as a fisherman, or pursue a professional poker playing career. The opportunities are endless! The
+<b>best GTA V RP server
+</b> is waiting for you!
+<br>
+<a href="#how-to-play">Download & Play
+</a> now!
+<div class="downloads">
+<a href="https://forum.eclipse-rp.net">
+<img alt="gta 5 roleplay forums" src="images\downloads\forums.png">
+</a>
+<a href="https://panel.eclipse-rp.net">
+<img alt="gta 5 roleplay panel" src="images\downloads\panel.png">
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section another-section" id="app-brief1">
+<div class="container">
+<div class="row relative">
+<div class="phones">
+<img alt="grand theft auto roleplay eclipse-rp tracey" src="images\TraceyMini.png" class="fadeInUp wow img-responsive right-mob-front" data-wow-delay="0s" data-wow-duration="1s" data-wow-offset="50" style="right:unset">
+</div>
+<div class="col-md-6 col-md-offset-5">
+<h2>Voice Chat - New Way Of Playing
+</h2>
+<p class="space40">We in our
+<b>GTA V RP server
+</b> community embrace voice chat as a primary way of communicating with other players. Our voice integration doesn't require any additional software so that usage of it is smooth and easy.
+<p>Text chat is still available as an second option if you are unable to use voice chat, but be aware, you will be in a disadvantage and you will be losing out on an amazing experience!
+</p></div>
+</div>
+</div>
+</section>
+<section class="section another-section" id="app-brief2">
+<div class="container">
+<div class="row relative">
+<div class="col-md-6">
+<h2>Factions & Gangs
+</h2>
+<p class="space40">From mechanics to emergency services, from los santos police to downtown cab, you will be able to choose from any of these and many more government and non-government factions to fulfill your desire.
+<p>Throw yourself into an hurricane of unforeseen roleplay possibilities and experiences. In
+<b>Eclipse GTA V Roleplay server
+</b> each day will be different than the one before. You will meet all sorts of new people from all around Los Santos.
+</p></div>
+<div class="phones">
+<img alt="gta 5 roleplay eclipse hipster grand theft auto" class="fadeInUp wow img-responsive right-mob-front lazyload" data-wow-delay="0s" data-wow-duration="1s" data-wow-offset="50" data-src="images/HipsterMini.png">
+</div>
+</div>
+</div>
+</section>
+<section class="section another-section" id="app-brief1">
+<div class="container">
+<div class="row relative">
+<div class="phones">
+<img alt="grand thef auto 5 roleplay eclipse character" class="fadeInUp wow img-responsive right-mob-front lazyload" data-wow-delay="0s" data-wow-duration="1s" data-wow-offset="50" style="right:unset" data-src="images/right-mob-front.png">
+</div>
+<div class="col-md-6 col-md-offset-5">
+<h2>Guns, Drugs & Fun
+</h2>
+<p class="space40">Guns, drugs, poker - everything is here. With some of the most advanced gameplay scripts, you will not be disappointed with this server. Work as a garbage man or buy yourself a business. If you are feeling alone, get yourself a pet!
+<p>If you are leaning to the criminal side of los santos - be careful. Don't get caught or you will end up in prison. All the possibilities are within your reach!
+</p></div>
+</div>
+</div>
+</section>
+<section class="section another-section" id="how-to-play" style="text-align:left">
+<div class="container">
+<div class="row relative">
+<div class="phones">
+<img alt="how to play eclipse roleplay gta v server multiplayer" src="images\GunMini.png" class="fadeInUp wow img-responsive right-mob-front" data-wow-delay="0s" data-wow-duration="1s" data-wow-offset="50">
+</div>
+<div class="col-md-6">
+<h2>Download & Play!
+</h2>
+<p class="space40">
+<ol class="special" type="1">
+<li>Download
+<a href="https://rage.mp/">RageMP Client
+</a>
+<li>Launch the client and look for
+<b>[EN/US] [VOICE] ECLIPSE Roleplay
+</b> in the masterlist
+<li>Connect
+<li>Create an account
+<li>Pass the quiz
+<li>Play!
+</li></ol>
+</div>
+</div>
+</div>
+</section>
+<section class="section another-section" id="app-brief1">
+<div class="container">
+<div class="row relative">
+<div class="col-md-6 col-md-offset-5">
+<iframe allowfullscreen="" frameborder="0" height="270" src="https://www.youtube.com/embed/pDasWlCEJ-Y" width="480">
+            </iframe>
+</div>
+<div class="phones">
+<img alt="grand theft auto roleplay eclipse-rp tracey" src="images\beach.png" class="fadeInUp wow img-responsive right-mob-front" data-wow-delay="0s" data-wow-duration="1s" data-wow-offset="50" style="right:unset">
+</div>
+</div>
+</div>
+</section>
+<footer class="footer-style4" style="padding:0 0">
+<div class="container flex-center text-left">
+<div class="col-md-3 mb-md-20">
+<a href="#" class="page-scroll">
+<img alt="gta 5 eclipse roleplay footer" src="images\logo.png">
+</a>
+</div>
+<div class="col-md-3 mb-md-20 col-md-offset-3 text-center">
+<p>GTA V Roleplay
+</p></div>
+<div class="col-md-6">
+<ul class="clearlist socialList text-right">
+<li>
+<a href="https://www.facebook.com/eclipseroleplay/">
+<i class="fa fa-facebook">
+</i>
+</a>
+<li>
+<a href="https://twitter.com/rp_eclipse">
+<i class="fa fa-twitter">
+</i>
+</a>
+<li>
+<a href="https://www.pinterest.com/EclipseRoleplay/">
+<i class="fa fa-pinterest">
+</i>
+</a>
+<li>
+<a href="https://www.instagram.com/eclipseroleplay">
+<i class="fa fa-instagram">
+</i>
+</a>
+<li>
+<a href="https://www.youtube.com/channel/UCzW-jSLdhKvkY5IIUAiyHkg">
+<i class="fa fa-youtube-play">
+</i>
+</a>
+<li>
+<a href="https://www.reddit.com/r/eclipserp/">
+<i class="fa fa-reddit">
+</i>
+</a>
+<li>
+<a href="https://steamcommunity.com/groups/eclipse_roleplay">
+<i class="fa fa-steam">
+</i>
+</a>
+<li>
+<a href="https://plus.google.com/u/3/104368018593781683331">
+<i class="fa fa-google-plus">
+</i>
+</a>
+</li></ul>
+</div>
+</div>
+</footer>
+<script>var cb=function(){
+        var e=document.createElement("link");
+        e.rel="stylesheet",e.href="css/eclipse-rp.net_app_min.css";
+        var t=document.getElementsByTagName("head")[0];
+        t.parentNode.insertBefore(e,t)}
+      ,raf=requestAnimationFrame||mozRequestAnimationFrame||webkitRequestAnimationFrame||msRequestAnimationFrame;
+      raf?raf(cb):window.addEventListener("load",cb)</script>
+<script src="js\modernizr.custom.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>window.jQuery||document.write('<script src="js/jquery-1.12.4.min.js"><\/script>')</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.appear/0.3.3/jquery.appear.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inview/1.0.0/jquery.inview.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+<script src="js\allinone_carousel.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countto/1.2.0/jquery.countTo.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-placeholder/2.3.1/jquery.placeholder.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxchimp/1.3.0/jquery.ajaxchimp.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jsSocials/1.5.0/jssocials.min.js"></script>
+<script src="js\script.js"></script>
+<script src="js\server.js"></script>
+<script>$(window).load(function(){
+        $(".lazyload").each(function(){
+          $(this).attr("src",$(this).attr("data-src"))}
+                           )}
+                          )</script>
+</body>
+</html>
